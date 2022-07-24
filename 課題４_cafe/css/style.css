@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #4f260b;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* headerここから */
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 77px 0px 15px;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    width: 227px;
+}
+
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav ul li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    margin-right: 43px;
+    margin-left: 43px;
+    line-height: 1.222px;
+}
+
+.pc_nav li:last-child {
+    margin-right: 0;
+}
+
+.pc_nav a {
+    display: block;
+}
+
+.slider_img {
+    width: 100%;
+}
+/* headerここまで */
+
+.background {
+    background-color: #e8d9be;
+}
+.title {
+    justify-content: center;
+    display: flex;
+    margin: 100px 0 45px;
+}
+
+.title img {
+    height: 78px;
+    width: auto;
+}
+
+/* mainここから */
+.lead {
+    text-align: center;
+    color: #4f260b;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.lead_1 {
+    font-size: 30px;
+    padding: 107px 10px 0;
+}
+
+.lead_2 {
+    font-size: 82px;
+    line-height: 96px;
+    padding: 63px 10px 0;
+    letter-spacing: 10px;
+}
+
+.lead_3 {
+    font-size: 23px;
+    line-height: 38px;
+    padding: 56px 10px 105px;
+    letter-spacing: 3px;
+}
+/* mainここまで */
+
+/* about usここから */
+.aboutus_wrap {
+    max-width: 1000px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 108px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.aboutus_pic img {
+    border-bottom-right-radius: 83px;
+}
+
+.aboutus_text {
+    width: 41%;
+}
+
+.aboutus_title img {
+    text-align: left;
+    height: 78px;
+    margin: 60px 0 60px;
+}
+
+.aboutus_1 {
+    font-size: 44px;
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 37px;
+}
+
+.aboutus_2 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: left;
+}
+/* about usここまで */
+
+/* menuここから */
+.menu_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.menu_wrap > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.menu_detail img {
+    border-top-right-radius: 40px;
+}
+
+.menu_detail p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #4f260b;
+    width: 300px;
+}
+
+.menu_content_wrap h3 {
+    color: #d30202;
+    font-size: 38px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+/* menuここまで */
+
+/* galleryここから */
+.gallery_photo ul li {
+    display: table;
+    display: table-cell;
+}
+/* galleryここまで */
+
+/* eventここから */
+.event_wrap {
+    width: 1000px;
+    background-color: #fff;
+    border: 4px solid #4f260b;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px 0 20px;
+}
+
+.event_wrap ul li {
+    font-size: 23px;
+    line-height: 1.9;
+    display: flex;
+    color: #4f260b;
+    font-weight: bold;
+}
+
+.day {
+    margin-left: 169px;
+}
+
+.text {
+    text-decoration: underline;
+    text-decoration-color: #4f260b;
+    margin-left: 26px;
+}
+/* eventここまで */
+
+/* accessここから */
+.map iframe {
+    width: 100%;
+    height: 471px;
+}
+/* accessここまで */
+
+/* fotterここから */
+.footer {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.footer_wrap {
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 191px;
+}
+
+.fotter_logo {
+    width: 227px;
+}
+
+.footer_nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 35px;
+    line-height: 1.9;
+}
+
+.copy {
+    font-size: 16px;
+    color: #000;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.totop {
+    position: fixed;
+    bottom: 155px;
+    right: 115px;
+    width: 125px;
+}
+/* fotterここまで */
